@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 env/
@@ -88,10 +85,19 @@ ENV/
 # Rope project settings
 .ropeproject
 
-Binaries/
-
 #don't update this file again
 Content/Scripts/upyconfig.json
 python35/
 python27/
 *.un~
+
+#embedded python files
+!ThirdParty/**
+!Binaries/**
+Binaries/**/*.pdb
+Binaries/**/*.modules
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
